@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="gallery.css">
+	<title>Gallery</title>
+</head>
+<body>
+    <header>
+  <nav>
+    <h2><a href="#" id="logo">Groffy</a></h2>
+    <button class="nav-button fa fa-bars"></button>
+    <div>
+<!--     <ul> -->
+      <ul>
+        <button class="exit-menu fa fa-times"></button>
+        <li><a href="#" class="active">welcome</a></li>
+        <li><a href="#">menu</a></li>
+        <li><a href="#">reservations</a></li>
+        <li><a href="#">news</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+<!--     </ul> -->
+    </div>
+  </nav>
+        <div class="center">
+          <h1 class="alex-brush">GALLERY</h1>
+          <h2>the Groffy</h2>
+          <span id="asterisk">*</span>
+          <p>EXPLORE OUR WORK</p>
+        </div>
+      </header>
+      
+      <section class="add-padding add-flex">
+        <div class="center-text">
+          <h1 class="alex-brush" style="letter-spacing: 3px;"><span class="custom-font">Gallery</span><br />OUR WORK SPEAKS</h1>
+          <h2>*</h2>
+          <p>Here you will see our , One of the Best work done <br>
+            till now. We let our Work speak for us.
+          </p>
+         
+        </div>
+       
+      </section>
+      
+      
+      <section class="cake-background center-h1">
+        <h1 class="custom-h1"><span class="custom-font alex-brush"></span><br />TO OUR GALLERY</h1>
+      </section>
+       <!-- Gallery-->
+
+
+      <div class="container">
+    <div class="panel active" style="background-image: url('https://images.pexels.com/photos/3797991/pexels-photo-3797991.jpeg?cs=srgb&dl=pexels-houzlook-com-3797991.jpg&fm=jpg')">
+    <a href="bedroom.html"><h3>Bedroom</h3></a>
+    </div>
+
+    <div class="panel" style="background-image: url('https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?cs=srgb&dl=pexels-pixabay-262048.jpg&fm=jpg')">
+        <a href="living.html"> <h3>Living Room</h3></a>
+    </div>
+
+    <div class="panel" style="background-image: url('https://images.pexels.com/photos/1909791/pexels-photo-1909791.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')">
+    <a href="bath.html"> <h3>Bath Room</h3></a>
+    </div>
+
+    <div class="panel" style="background-image: url('https://images.pexels.com/photos/534151/pexels-photo-534151.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')">
+     <a href="din.html"> <h3>Dining Room</h3></a>
+    </div>
+
+    <div class="panel" style="background-image: url('https://images.pexels.com/photos/1648768/pexels-photo-1648768.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')">
+     <a href="child.html"> <h3>Children Room</h3></a> 
+    </div>
+    
+    <div class="panel" style="background-image: url('https://images.pexels.com/photos/3637739/pexels-photo-3637739.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')">
+     <a href="kitchen.html"> <h3>Kitchen</h3></a> 
+    </div>
+
+  </div>
+    
+       <!--end-->
+
+       <script>
+         
+         const panels = document.querySelectorAll('.panel')
+
+panels.forEach((panel) => {
+  panel.addEventListener('click', () =>{
+
+    removeActiveClass()
+    panel.classList.add('active')
+
+  })
+
+
+function removeActiveClass(){
+  panels.forEach((panel) => {
+    panel.classList.remove('active')
+  });
+
+}
+
+
+});
+
+       </script>
+
+      
+      
+      <script src="apt.js"></script>
+</body>
+</html>
